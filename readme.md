@@ -8,7 +8,7 @@ Designali Mono is available in 8 weights (Thin → ExtraBold) as static TTF/OTF,
 
 ## Installation
 
-Download the latest release from the [releases page](https://github.com/aliimam/designali-mono/releases/latest) and install the fonts on your system.
+Download the latest release from the [releases page](https://github.com/designali/fonts) and install the fonts on your system.
 
 ### Web
 
@@ -36,11 +36,7 @@ If you want to build fonts manually on your own computer:
 * `make test` will run [Fontspector](https://github.com/fonttools/fontspector) quality assurance tests.
 * `make proof` will generate HTML proof files.
 
-The proof files and QA tests are also available automatically via GitHub Actions - look at https://aliimam.github.io/designali-mono.
-
-## Credits
-
-Designali Mono is a derivative of [Paper Mono](https://github.com/paper-design/paper-mono) by Paper Design, which itself is based on [Geist Mono](https://github.com/vercel/geist-font) by Vercel and basement.studio. See [AUTHORS.txt](AUTHORS.txt) for the full list of authors.
+The proof files and QA tests are also available automatically via GitHub Actions - look at https://designali.github.io/fonts.
 
 ## License
 

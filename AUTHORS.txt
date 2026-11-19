@@ -3,19 +3,9 @@
 # See the latter for an explanation.
 #
 # Names should be added to this file as:
-# Name or Organization <email address>
+# Name or Organization <hello@designali.com>
 
 # Designali Mono
 Ali Imam
 Designali
-
-# Paper Mono
-Guido Ferreyra <guido@tipografia.com.ar>
-Vladyslav Moroz <vlad@paper.design>
-Paper Design <team@paper.design>
-
-# Geist Mono
-Andrés Briganti <info@briganti.works>
-Mateo Zaragoza <mateo@basement.studio>
-Basement.studio <hello@basement.studio>
-Vercel <contactus@vercel.com>
+ 
