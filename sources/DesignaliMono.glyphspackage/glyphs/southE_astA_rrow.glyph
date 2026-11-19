@@ -1,0 +1,40 @@
+{
+color = 8;
+glyphname = southEastArrow;
+layers = (
+{
+layerId = m003;
+shapes = (
+{
+angle = -90;
+pos = (-35,666);
+ref = northEastArrow;
+}
+);
+width = 606;
+},
+{
+layerId = "742FEEFA-C05E-41BB-8475-8B252540AEF7";
+shapes = (
+{
+angle = -90;
+pos = (-61,666);
+ref = northEastArrow;
+}
+);
+width = 606;
+},
+{
+layerId = "2B4B7FDD-7E66-4143-AA8B-CAF759C636CA";
+shapes = (
+{
+angle = -90;
+pos = (-48,666);
+ref = northEastArrow;
+}
+);
+width = 606;
+}
+);
+unicode = 8600;
+}
