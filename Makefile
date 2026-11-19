@@ -1,7 +1,8 @@
+PYTHON ?= $(shell command -v python3.12 || command -v python3)
 SOURCES=$(shell python3 scripts/read-config.py --sources )
 FAMILY=$(shell python3 scripts/read-config.py --family )
-DRAWBOT_SCRIPTS=$(shell ls documentation/*.py)
-DRAWBOT_OUTPUT=$(shell ls documentation/*.py | sed 's/\.py/.png/g')
+DRAWBOT_SCRIPTS=$(shell ls documentation/*.py 2>/dev/null)
+DRAWBOT_OUTPUT=$(shell ls documentation/*.py 2>/dev/null | sed 's/\.py/.png/g')
 
 .PHONY: build-term test-term
 
@@ -37,7 +38,7 @@ build.stamp: venv sources/config.yaml sources/config-term.yaml $(SOURCES) source
 	(for config in sources/config*.yaml; do . venv/bin/activate; gftools builder $$config; done)  && touch build.stamp
 
 venv/touchfile: requirements.txt
-	test -d venv || python3 -m venv venv
+	test -d venv || $(PYTHON) -m venv venv
 	. venv/bin/activate; pip install -Ur requirements.txt
 	touch venv/touchfile
 

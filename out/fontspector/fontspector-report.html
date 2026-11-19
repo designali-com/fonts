@@ -279,10 +279,10 @@ you're checking.</p>
         <th>⚠️ WARN</th><th>ℹ️ INFO</th><th>✅ PASS</th><th>⏩ SKIP</th>
     </tr>
     <tr>
-        <td>14 </td> <td>8 </td> <td>111 </td> <td>49 </td> 
+        <td>17 </td> <td>15 </td> <td>123 </td> <td>60 </td> 
     </tr>
     <tr>
-        <td>8%</td> <td>4%</td> <td>62%</td> <td>27%</td> 
+        <td>8%</td> <td>7%</td> <td>57%</td> <td>28%</td> 
     </tr>
 </table>
 
@@ -308,7 +308,7 @@ immediately.
 <p>(but other kinds of bug reports and/or feature requests
     are also always welcome, of course!)</p>
 
-<p>Fontspector version: 1.4.0</p>
+<p>Fontspector version: 1.9.1</p>
         
             <h2>Opentype Specification Checks</h2>
 
@@ -331,6 +331,57 @@ immediately.
     
 
     
+
+    
+
+    
+
+    
+
+    
+
+    
+        <h3>Check that OS&#x2F;2 fsSelection WWS bit is set correctly.</h3>
+<div class='check__idlabel'>Check ID: opentype&#x2F;fsselection_wws</div>
+
+<div class="rationale">
+    
+
+</div>
+
+
+    
+        <details>
+            <summary>
+                ⚠️
+                DesignaliMono[wght].ttf
+                
+            </summary>
+            <div>
+                <ul>
+                
+                
+                        <li class='details_item'>
+                            <span class='details_indicator'>
+                            ⚠️ WARN
+                            </span>
+
+                            <span class='details_text'>
+                                
+                                    <p>OS/2 fsSelection WWS bit is not set, and the font does not have name IDs 21/22 (WWS Family/Subfamily). If the font's naming is WWS-conformant, the WWS bit should be set.</p>
+                                
+                                
+                                     [code: no-wws-without-wws-names]
+                                
+                            </span>
+                        </li>
+                
+                
+                </ul>
+            </div>
+        </details>
+    
+
 
     
 
@@ -382,7 +433,7 @@ immediately.
         <details>
             <summary>
                 ⚠️
-                PaperMono[wght].ttf
+                DesignaliMono[wght].ttf
                 
             </summary>
             <div>
@@ -396,7 +447,7 @@ immediately.
 
                             <span class='details_text'>
                                 
-                                    <p>The OpenType spec recommends at <a href="https://learn.microsoft.com/en-us/typography/opentype/spec/recom#hhea-table">https://learn.microsoft.com/en-us/typography/opentype/spec/recom#hhea-table</a> that hhea.numberOfHMetrics be set to 3 but this font has 799 instead.
+                                    <p>The OpenType spec recommends at <a href="https://learn.microsoft.com/en-us/typography/opentype/spec/recom#hhea-table">https://learn.microsoft.com/en-us/typography/opentype/spec/recom#hhea-table</a> that hhea.numberOfHMetrics be set to 3 but this font has 796 instead.
 Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https://github.com/fonttools/fonttools/issues/3014</a> to decide whether this makes sense for your font.</p>
                                 
                                 
@@ -414,7 +465,7 @@ Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https:/
 
                             <span class='details_text'>
                                 
-                                    <p>Font is monospaced (common width = 606) but 41 glyphs (5.12%) have a different width. You should check the widths of:</p>
+                                    <p>Font is monospaced (common width = 606) but 40 glyphs (5.00%) have a different width. You should check the widths of:</p>
 <ul>
 <li>uniF8FF (417), width: 758</li>
 <li>uni21E4 (482), width: 758</li>
@@ -456,7 +507,6 @@ Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https:/
 <li>uni2325 (792), width: 758</li>
 <li>uni2318 (793), width: 758</li>
 <li>uni23CE (794), width: 758</li>
-<li>openbullet (797), width: 600</li>
 </ul>
                                 
                                 
@@ -510,9 +560,13 @@ Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https:/
 
     
 
+    
+
 
         
             <h2>Universal Profile Checks</h2>
+
+    
 
     
 
@@ -534,7 +588,7 @@ Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https:/
         <details>
             <summary>
                 ⚠️
-                PaperMono[wght].ttf
+                DesignaliMono[wght].ttf
                 
             </summary>
             <div>
@@ -596,6 +650,10 @@ Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https:/
     
 
     
+
+    
+
+    
         <h3>Does GPOS table have kerning information?</h3>
 <div class='check__idlabel'>Check ID: gpos_kerning_info</div>
 
@@ -609,7 +667,7 @@ Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https:/
         <details>
             <summary>
                 ⚠️
-                PaperMono[wght].ttf
+                DesignaliMono[wght].ttf
                 
             </summary>
             <div>
@@ -714,7 +772,7 @@ Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https:/
         <details>
             <summary>
                 ⚠️
-                PaperMono[wght].ttf
+                DesignaliMono[wght].ttf
                 
             </summary>
             <div>
@@ -753,6 +811,10 @@ Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https:/
     
 
     
+
+    
+
+    
         <h3>Glyph names are all valid?</h3>
 <div class='check__idlabel'>Check ID: valid_glyphnames</div>
 
@@ -766,7 +828,7 @@ Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https:/
         <details>
             <summary>
                 ⚠️
-                PaperMono[wght].ttf
+                DesignaliMono[wght].ttf
                 
             </summary>
             <div>
@@ -806,6 +868,480 @@ Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https:/
     
 
     
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <h3>Ensure font has overlaps bit set correctly.</h3>
+<div class='check__idlabel'>Check ID: overlaps_bit</div>
+
+<div class="rationale">
+    
+
+</div>
+
+
+    
+        <details>
+            <summary>
+                ⚠️
+                DesignaliMono[wght].ttf
+                
+            </summary>
+            <div>
+                <ul>
+                
+                
+                        <li class='details_item'>
+                            <span class='details_indicator'>
+                            ⚠️ WARN
+                            </span>
+
+                            <span class='details_text'>
+                                
+                                    <p>The following glyphs have overlaps but the overlaps bit is not set:</p>
+<ul>
+<li>igrave (U+00EC)</li>
+<li>wcircumflex (U+0175)</li>
+<li>uni0302 (U+0302)</li>
+<li>scedilla (U+015F)</li>
+<li>seven (U+0037)</li>
+<li>exclam_equal.liga</li>
+<li>OE.ss02</li>
+<li>uni2325 (U+2325)</li>
+<li>Iogonek (U+012E)</li>
+<li>Ccircumflex (U+0108)</li>
+<li>ccaron (U+010D)</li>
+<li>W.ss02</li>
+<li>Wacute.ss02</li>
+<li>uni013C (U+013C)</li>
+<li>ucircumflex (U+00FB)</li>
+<li>arrowdown (U+2193)</li>
+<li>Gcircumflex (U+011C)</li>
+<li>two.dnom</li>
+<li>adieresis (U+00E4)</li>
+<li>period_period_less.liga</li>
+<li>Thorn (U+00DE)</li>
+<li>greater_greater.liga</li>
+<li>ygrave (U+1EF3)</li>
+<li>uni2326 (U+2326)</li>
+<li>uni1E9E (U+1E9E)</li>
+<li>itilde (U+0129)</li>
+<li>uni21EA (U+21EA)</li>
+<li>hbar (U+0127)</li>
+<li>dcroat (U+0111)</li>
+<li>egrave (U+00E8)</li>
+<li>onehalf (U+00BD)</li>
+<li>Tbar (U+0166)</li>
+<li>h (U+0068)</li>
+<li>jcircumflex (U+0135)</li>
+<li>Lacute (U+0139)</li>
+<li>uni2303 (U+2303)</li>
+<li>Wcircumflex (U+0174)</li>
+<li>uni0259 (U+0259)</li>
+<li>uni00B5 (U+03BC)</li>
+<li>uni2089 (U+2089)</li>
+<li>carriagereturn (U+21B5)</li>
+<li>germandbls (U+00DF)</li>
+<li>hyphen_greater.liga</li>
+<li>numbersign_equal.liga</li>
+<li>uni238B (U+238B)</li>
+<li>uni2461 (U+2461)</li>
+<li>lessequal (U+2264)</li>
+<li>lcaron (U+013E)</li>
+<li>ntilde (U+00F1)</li>
+<li>ae (U+00E6)</li>
+<li>abreve (U+0103)</li>
+<li>W (U+0057)</li>
+<li>j (U+006A)</li>
+<li>N (U+004E)</li>
+<li>z (U+007A)</li>
+<li>threeeighths (U+215C)</li>
+<li>seveneighths (U+215E)</li>
+<li>X (U+0058)</li>
+<li>Ldot (U+013F)</li>
+<li>icircumflex (U+00EE)</li>
+<li>arrowdown.ss04</li>
+<li>Amacron (U+0100)</li>
+<li>Wdieresis (U+1E84)</li>
+<li>Scircumflex (U+015C)</li>
+<li>uni2197.ss04</li>
+<li>partialdiff (U+2202)</li>
+<li>agrave.cv01</li>
+<li>uni21B4 (U+21B4)</li>
+<li>bar_greater.liga</li>
+<li>greater_equal.liga</li>
+<li>uni2196.ss04</li>
+<li>currency (U+00A4)</li>
+<li>Hbar (U+0126)</li>
+<li>cedilla (U+00B8)</li>
+<li>eng (U+014B)</li>
+<li>v (U+0076)</li>
+<li>uni01E5 (U+01E5)</li>
+<li>fi (U+FB01)</li>
+<li>nine (U+0039)</li>
+<li>Ygrave (U+1EF2)</li>
+<li>Jcircumflex (U+0134)</li>
+<li>uni2466 (U+2466)</li>
+<li>registered (U+00AE)</li>
+<li>uni2198 (U+2198)</li>
+<li>Wdieresis.ss02</li>
+<li>five (U+0035)</li>
+<li>less_equal_greater.liga</li>
+<li>Ncaron (U+0147)</li>
+<li>uni01CE.cv01</li>
+<li>uhungarumlaut (U+0171)</li>
+<li>numbersign (U+0023)</li>
+<li>imacron (U+012B)</li>
+<li>section (U+00A7)</li>
+<li>Wacute (U+1E82)</li>
+<li>abreve.cv01</li>
+<li>k (U+006B)</li>
+<li>six.numr</li>
+<li>uni2116 (U+2116)</li>
+<li>Euro (U+20AC)</li>
+<li>emacron (U+0113)</li>
+<li>less_hyphen_hyphen.liga</li>
+<li>idieresis (U+00EF)</li>
+<li>uni20BD (U+20BD)</li>
+<li>Abreve (U+0102)</li>
+<li>Eth (U+00D0)</li>
+<li>Nacute (U+0143)</li>
+<li>amacron (U+0101)</li>
+<li>aogonek (U+0105)</li>
+<li>uni232B (U+232B)</li>
+<li>K (U+004B)</li>
+<li>m (U+006D)</li>
+<li>equal_slash_equal.liga</li>
+<li>Scaron (U+0160)</li>
+<li>uring (U+016F)</li>
+<li>florin (U+0192)</li>
+<li>uni0162 (U+0162)</li>
+<li>ampersand (U+0026)</li>
+<li>L (U+004C)</li>
+<li>uni20B1 (U+20B1)</li>
+<li>Q.BRACKET.varAlt01</li>
+<li>uni2463 (U+2463)</li>
+<li>Lslash (U+0141)</li>
+<li>Yacute (U+00DD)</li>
+<li>i.loclTRK</li>
+<li>Aring (U+00C5)</li>
+<li>asterisk (U+002A)</li>
+<li>uni2154 (U+2154)</li>
+<li>uni0163 (U+0163)</li>
+<li>Wcircumflex.ss02</li>
+<li>wdieresis (U+1E85)</li>
+<li>OE (U+0152)</li>
+<li>uni2087 (U+2087)</li>
+<li>uni2155 (U+2155)</li>
+<li>uni0E3F (U+0E3F)</li>
+<li>amacron.cv01</li>
+<li>three.numr</li>
+<li>colon_greater_colon.liga</li>
+<li>ncaron (U+0148)</li>
+<li>asciicircum (U+005E)</li>
+<li>Lcaron (U+013D)</li>
+<li>uni01E9 (U+01E9)</li>
+<li>Ucircumflex (U+00DB)</li>
+<li>Oslash (U+00D8)</li>
+<li>B (U+0042)</li>
+<li>atilde.cv01</li>
+<li>Atilde (U+00C3)</li>
+<li>ubreve (U+016D)</li>
+<li>uni01E4 (U+01E4)</li>
+<li>uni00B2 (U+00B2)</li>
+<li>r (U+0072)</li>
+<li>summation (U+2211)</li>
+<li>ocircumflex (U+00F4)</li>
+<li>uni030C.case</li>
+<li>greater_greater_equal.liga</li>
+<li>w.ss02</li>
+<li>atilde (U+00E3)</li>
+<li>uni23CE (U+23CE)</li>
+<li>Zdotaccent (U+017B)</li>
+<li>V (U+0056)</li>
+<li>aacute (U+00E1)</li>
+<li>eogonek (U+0119)</li>
+<li>dotlessi (U+0131)</li>
+<li>Dcroat (U+0110)</li>
+<li>f (U+0066)</li>
+<li>Acircumflex (U+00C2)</li>
+<li>Eng (U+014A)</li>
+<li>uni0237 (U+0237)</li>
+<li>ecaron (U+011B)</li>
+<li>edotaccent (U+0117)</li>
+<li>q (U+0071)</li>
+<li>uni006A0301</li>
+<li>fiveeighths (U+215D)</li>
+<li>ccircumflex (U+0109)</li>
+<li>four.dnom</li>
+<li>wcircumflex.ss02</li>
+<li>lacute (U+013A)</li>
+<li>Gcaron (U+01E6)</li>
+<li>uni004A0301</li>
+<li>uni0145 (U+0145)</li>
+<li>five.dnom</li>
+<li>onequarter (U+00BC)</li>
+<li>Lambda (U+039B)</li>
+<li>uni00B3 (U+00B3)</li>
+<li>uni2075 (U+2075)</li>
+<li>ecircumflex (U+00EA)</li>
+<li>colon_colon_greater.liga</li>
+<li>Ocircumflex (U+00D4)</li>
+<li>uni0302.case</li>
+<li>circumflex (U+02C6)</li>
+<li>M.ss02</li>
+<li>m.ss02</li>
+<li>udieresis (U+00FC)</li>
+<li>uni0156 (U+0156)</li>
+<li>uni2464 (U+2464)</li>
+<li>perthousand (U+2030)</li>
+<li>Aacute (U+00C1)</li>
+<li>H (U+0048)</li>
+<li>uni013B (U+013B)</li>
+<li>less_exclam_hyphen_hyphen.liga</li>
+<li>Ydieresis (U+0178)</li>
+<li>eth (U+00F0)</li>
+<li>uni0146.loclMAH</li>
+<li>dcaron (U+010F)</li>
+<li>zcaron (U+017E)</li>
+<li>seven.dnom</li>
+<li>Ecaron (U+011A)</li>
+<li>gcaron (U+01E7)</li>
+<li>uni01CE (U+01CE)</li>
+<li>multiply (U+00D7)</li>
+<li>colon_less_colon.liga</li>
+<li>oe.ss02</li>
+<li>zacute (U+017A)</li>
+<li>iacute (U+00ED)</li>
+<li>eight.numr</li>
+<li>uni013B.loclMAH</li>
+<li>oslash (U+00F8)</li>
+<li>uacute (U+00FA)</li>
+<li>equal_greater.liga</li>
+<li>lambda (U+03BB)</li>
+<li>uni2196 (U+2196)</li>
+<li>nacute (U+0144)</li>
+<li>Eogonek (U+0118)</li>
+<li>Adieresis (U+00C4)</li>
+<li>Hcircumflex (U+0124)</li>
+<li>scircumflex (U+015D)</li>
+<li>uni21B1 (U+21B1)</li>
+<li>Zacute (U+0179)</li>
+<li>uni0146 (U+0146)</li>
+<li>four.numr</li>
+<li>less_equal.liga</li>
+<li>aring.cv01</li>
+<li>uni2083 (U+2083)</li>
+<li>notequal (U+2260)</li>
+<li>less_less.liga</li>
+<li>uni01CD (U+01CD)</li>
+<li>uni1EF8 (U+1EF8)</li>
+<li>ydieresis (U+00FF)</li>
+<li>Ccedilla (U+00C7)</li>
+<li>tbar (U+0167)</li>
+<li>zero.zero</li>
+<li>dagger (U+2020)</li>
+<li>wdieresis.ss02</li>
+<li>uni2318 (U+2318)</li>
+<li>uni03A9 (U+03A9)</li>
+<li>uni21C6 (U+21C6)</li>
+<li>eacute (U+00E9)</li>
+<li>uni0137 (U+0137)</li>
+<li>Ccaron (U+010C)</li>
+<li>F (U+0046)</li>
+<li>ordfeminine (U+00AA)</li>
+<li>nine.dnom</li>
+<li>greaterequal (U+2265)</li>
+<li>less_hyphen_greater.liga</li>
+<li>hcircumflex (U+0125)</li>
+<li>AE (U+00C6)</li>
+<li>arrowright.ss04</li>
+<li>Tcaron (U+0164)</li>
+<li>rcaron (U+0159)</li>
+<li>acircumflex (U+00E2)</li>
+<li>aring (U+00E5)</li>
+<li>uni21B0 (U+21B0)</li>
+<li>uni21B3 (U+21B3)</li>
+<li>uni20B4 (U+20B4)</li>
+<li>uni2082 (U+2082)</li>
+<li>three.dnom</li>
+<li>two.numr</li>
+<li>greater (U+003E)</li>
+<li>uni1EBD (U+1EBD)</li>
+<li>ae.ss02</li>
+<li>eight (U+0038)</li>
+<li>AE.ss02</li>
+<li>three (U+0033)</li>
+<li>arrowup (U+2191)</li>
+<li>Ecircumflex (U+00CA)</li>
+<li>R (U+0052)</li>
+<li>scaron (U+0161)</li>
+<li>uni021B (U+021B)</li>
+<li>uni2467 (U+2467)</li>
+<li>agrave (U+00E0)</li>
+<li>p (U+0070)</li>
+<li>Aogonek (U+0104)</li>
+<li>M (U+004D)</li>
+<li>acircumflex.cv01</li>
+<li>uni2153 (U+2153)</li>
+<li>uni2079 (U+2079)</li>
+<li>uni2086 (U+2086)</li>
+<li>Scedilla (U+015E)</li>
+<li>lslash (U+0142)</li>
+<li>daggerdbl (U+2021)</li>
+<li>uni20B9 (U+20B9)</li>
+<li>plus (U+002B)</li>
+<li>radical (U+221A)</li>
+<li>arrowboth (U+2194)</li>
+<li>uni21A9 (U+21A9)</li>
+<li>cent (U+00A2)</li>
+<li>less_hyphen.liga</li>
+<li>seven.numr</li>
+<li>uni2198.ss04</li>
+<li>exclam_equal_equal.liga</li>
+<li>gcircumflex (U+011D)</li>
+<li>less_bar_greater.liga</li>
+<li>l (U+006C)</li>
+<li>x (U+0078)</li>
+<li>Dcaron (U+010E)</li>
+<li>utilde (U+0169)</li>
+<li>y (U+0079)</li>
+<li>adieresis.cv01</li>
+<li>five.numr</li>
+<li>aacute.cv01</li>
+<li>two (U+0032)</li>
+<li>u (U+0075)</li>
+<li>uni2465 (U+2465)</li>
+<li>arrowright (U+2192)</li>
+<li>uni2199 (U+2199)</li>
+<li>hyphen_hyphen_greater.liga</li>
+<li>nine.numr</li>
+<li>equal_greater_greater.liga</li>
+<li>Wgrave (U+1E80)</li>
+<li>uni2084 (U+2084)</li>
+<li>w (U+0077)</li>
+<li>b (U+0062)</li>
+<li>eight.dnom</li>
+<li>uni2074 (U+2074)</li>
+<li>uni2077 (U+2077)</li>
+<li>less_hyphen_hyphen_greater.liga</li>
+<li>zdotaccent (U+017C)</li>
+<li>plusminus (U+00B1)</li>
+<li>uni2088 (U+2088)</li>
+<li>uni21E4 (U+21E4)</li>
+<li>uni21E5 (U+21E5)</li>
+<li>arrowleft.ss04</li>
+<li>uni2468 (U+2468)</li>
+<li>equal_less_less.liga</li>
+<li>iogonek (U+012F)</li>
+<li>J (U+004A)</li>
+<li>less_bar.liga</li>
+<li>A (U+0041)</li>
+<li>arrowup.ss04</li>
+<li>less_less_equal.liga</li>
+<li>uni2327 (U+2327)</li>
+<li>wgrave.ss02</li>
+<li>uni030C (U+030C)</li>
+<li>Wgrave.ss02</li>
+<li>uni013C.loclMAH</li>
+<li>racute (U+0155)</li>
+<li>uni0157 (U+0157)</li>
+<li>pi (U+03C0)</li>
+<li>Ycircumflex (U+0176)</li>
+<li>uni2199.ss04</li>
+<li>i (U+0069)</li>
+<li>Rcaron (U+0158)</li>
+<li>ccedilla (U+00E7)</li>
+<li>aogonek.cv01</li>
+<li>uni21AA (U+21AA)</li>
+<li>caron (U+02C7)</li>
+<li>wacute.ss02</li>
+<li>d (U+0064)</li>
+<li>infinity (U+221E)</li>
+<li>exclam_asciitilde.liga</li>
+<li>Ntilde (U+00D1)</li>
+<li>oneeighth (U+215B)</li>
+<li>yen (U+00A5)</li>
+<li>Agrave (U+00C0)</li>
+<li>threequarters (U+00BE)</li>
+<li>uni01E8 (U+01E8)</li>
+<li>uni0136 (U+0136)</li>
+<li>uni0145.loclMAH</li>
+<li>IJ (U+0132)</li>
+<li>uni1EF9 (U+1EF9)</li>
+<li>uni018F (U+018F)</li>
+<li>uni2462 (U+2462)</li>
+<li>uni2197 (U+2197)</li>
+<li>fl (U+FB02)</li>
+<li>yacute (U+00FD)</li>
+<li>edieresis (U+00EB)</li>
+<li>a (U+0061)</li>
+<li>Uogonek (U+0172)</li>
+<li>ldot (U+0140)</li>
+<li>n (U+006E)</li>
+<li>thorn (U+00FE)</li>
+<li>ycircumflex (U+0177)</li>
+<li>tcaron (U+0165)</li>
+<li>ugrave (U+00F9)</li>
+<li>one (U+0031)</li>
+<li>six.dnom</li>
+<li>Z (U+005A)</li>
+<li>at (U+0040)</li>
+<li>less (U+003C)</li>
+<li>uni2206 (U+2206)</li>
+<li>uni2078 (U+2078)</li>
+<li>Icircumflex (U+00CE)</li>
+<li>wacute (U+1E83)</li>
+<li>wgrave (U+1E81)</li>
+<li>Racute (U+0154)</li>
+<li>four (U+0034)</li>
+<li>a.cv01</li>
+<li>oe (U+0153)</li>
+<li>six (U+0036)</li>
+<li>uogonek (U+0173)</li>
+<li>uni2076 (U+2076)</li>
+<li>Y (U+0059)</li>
+<li>umacron (U+016B)</li>
+<li>trademark (U+2122)</li>
+<li>dollar (U+0024)</li>
+<li>arrowleft (U+2190)</li>
+<li>Q (U+0051)</li>
+<li>arrowupdn (U+2195)</li>
+<li>Zcaron (U+017D)</li>
+<li>uni21E7 (U+21E7)</li>
+<li>less_colon_colon.liga</li>
+<li>e (U+0065)</li>
+<li>uni2085 (U+2085)</li>
+<li>t (U+0074)</li>
+<li>sterling (U+00A3)</li>
+<li>uni0327 (U+0327)</li>
+</ul>
+                                
+                                
+                                     [code: no-overlaps-bit]
+                                
+                            </span>
+                        </li>
+                
+                
+                </ul>
+            </div>
+        </details>
+    
+
 
     
 
@@ -863,26 +1399,26 @@ Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https:/
 
                             <span class='details_text'>
                                 
-                                    <p>fonts/variable/PaperMono[wght].ttf: The following codepoints supported by the font are not covered by any subsets defined in the font's metadata file, and will never be served. You can solve this by either manually adding additional subset declarations to METADATA.pb, or by editing the glyphset definitions.</p>
+                                    <p>fonts/variable/DesignaliMono[wght].ttf: The following codepoints supported by the font are not covered by any subsets defined in the font's metadata file, and will never be served. You can solve this by either manually adding additional subset declarations to METADATA.pb, or by editing the glyphset definitions.</p>
 <ul>
 <li>U+02D8 BREVE: try adding one of: yi, canadian-aboriginal</li>
-<li>U+02D9 DOT ABOVE: try adding one of: canadian-aboriginal, yi</li>
-<li>U+02DB OGONEK: try adding one of: canadian-aboriginal, yi</li>
-<li>U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: cherokee, tifinagh, coptic, math</li>
-<li>U+0306 COMBINING BREVE: try adding one of: tifinagh, old-permic</li>
-<li>U+0307 COMBINING DOT ABOVE: try adding one of: coptic, canadian-aboriginal, duployan, hebrew, todhri, syriac, tai-le, malayalam, old-permic, math, tifinagh</li>
+<li>U+02D9 DOT ABOVE: try adding one of: yi, canadian-aboriginal</li>
+<li>U+02DB OGONEK: try adding one of: yi, canadian-aboriginal</li>
+<li>U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: tifinagh, math, cherokee, coptic</li>
+<li>U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh</li>
+<li>U+0307 COMBINING DOT ABOVE: try adding one of: math, tifinagh, malayalam, canadian-aboriginal, hebrew, syriac, duployan, todhri, tai-le, old-permic, coptic</li>
 <li>U+030A COMBINING RING ABOVE: try adding one of: duployan, syriac</li>
-<li>U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: cherokee, osage</li>
-<li>U+030C COMBINING CARON: try adding one of: cherokee, tai-le</li>
+<li>U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee</li>
+<li>U+030C COMBINING CARON: try adding one of: tai-le, cherokee</li>
 <li>U+0312 COMBINING TURNED COMMA ABOVE: try adding math</li>
 <li>U+0326 COMBINING COMMA BELOW: try adding math</li>
 <li>U+0327 COMBINING CEDILLA: try adding math</li>
 <li>U+0338 COMBINING LONG SOLIDUS OVERLAY: try adding math</li>
 <li>U+039B GREEK CAPITAL LETTER LAMDA: try adding one of: greek, math, elbasan</li>
-<li>U+03A9 GREEK CAPITAL LETTER OMEGA: try adding one of: elbasan, math, greek</li>
-<li>U+03BB GREEK SMALL LETTER LAMDA: try adding one of: greek, math</li>
-<li>U+03BC GREEK SMALL LETTER MU: try adding one of: greek, math</li>
-<li>U+03C0 GREEK SMALL LETTER PI: try adding one of: greek, math, yi</li>
+<li>U+03A9 GREEK CAPITAL LETTER OMEGA: try adding one of: math, elbasan, greek</li>
+<li>U+03BB GREEK SMALL LETTER LAMDA: try adding one of: math, greek</li>
+<li>U+03BC GREEK SMALL LETTER MU: try adding one of: math, greek</li>
+<li>U+03C0 GREEK SMALL LETTER PI: try adding one of: math, yi, greek</li>
 <li>U+0E3F THAI CURRENCY SYMBOL BAHT: try adding thai</li>
 <li>U+1EBC LATIN CAPITAL LETTER E WITH TILDE: try adding vietnamese</li>
 <li>U+1EBD LATIN SMALL LETTER E WITH TILDE: try adding vietnamese</li>
@@ -915,13 +1451,13 @@ Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https:/
 <li>U+215D VULGAR FRACTION FIVE EIGHTHS: try adding symbols</li>
 <li>U+215E VULGAR FRACTION SEVEN EIGHTHS: try adding symbols</li>
 <li>U+2190 LEFTWARDS ARROW: try adding one of: math, symbols</li>
-<li>U+2192 RIGHTWARDS ARROW: try adding one of: symbols, math</li>
-<li>U+2194 LEFT RIGHT ARROW: try adding one of: symbols, math</li>
-<li>U+2195 UP DOWN ARROW: try adding one of: symbols, math</li>
-<li>U+2196 NORTH WEST ARROW: try adding one of: math, symbols</li>
-<li>U+2197 NORTH EAST ARROW: try adding one of: math, symbols</li>
+<li>U+2192 RIGHTWARDS ARROW: try adding one of: math, symbols</li>
+<li>U+2194 LEFT RIGHT ARROW: try adding one of: math, symbols</li>
+<li>U+2195 UP DOWN ARROW: try adding one of: math, symbols</li>
+<li>U+2196 NORTH WEST ARROW: try adding one of: symbols, math</li>
+<li>U+2197 NORTH EAST ARROW: try adding one of: symbols, math</li>
 <li>U+2198 SOUTH EAST ARROW: try adding one of: math, symbols</li>
-<li>U+2199 SOUTH WEST ARROW: try adding one of: symbols, math</li>
+<li>U+2199 SOUTH WEST ARROW: try adding one of: math, symbols</li>
 <li>U+21A9 LEFTWARDS ARROW WITH HOOK: try adding math</li>
 <li>U+21AA RIGHTWARDS ARROW WITH HOOK: try adding math</li>
 <li>U+21B0 UPWARDS ARROW WITH TIP LEFTWARDS: try adding math</li>
@@ -955,18 +1491,18 @@ Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https:/
 <li>U+232B ERASE TO THE LEFT: try adding symbols</li>
 <li>U+238B BROKEN CIRCLE WITH NORTHWEST ARROW: try adding symbols</li>
 <li>U+23CE RETURN SYMBOL: try adding symbols</li>
-<li>U+2460 CIRCLED DIGIT ONE: try adding one of: mongolian, yi, symbols</li>
-<li>U+2461 CIRCLED DIGIT TWO: try adding one of: mongolian, symbols, yi</li>
-<li>U+2462 CIRCLED DIGIT THREE: try adding one of: symbols, yi, mongolian</li>
-<li>U+2463 CIRCLED DIGIT FOUR: try adding one of: mongolian, symbols, yi</li>
-<li>U+2464 CIRCLED DIGIT FIVE: try adding one of: symbols, yi, mongolian</li>
-<li>U+2465 CIRCLED DIGIT SIX: try adding one of: symbols, yi, mongolian</li>
+<li>U+2460 CIRCLED DIGIT ONE: try adding one of: mongolian, symbols, yi</li>
+<li>U+2461 CIRCLED DIGIT TWO: try adding one of: symbols, yi, mongolian</li>
+<li>U+2462 CIRCLED DIGIT THREE: try adding one of: mongolian, yi, symbols</li>
+<li>U+2463 CIRCLED DIGIT FOUR: try adding one of: yi, symbols, mongolian</li>
+<li>U+2464 CIRCLED DIGIT FIVE: try adding one of: yi, mongolian, symbols</li>
+<li>U+2465 CIRCLED DIGIT SIX: try adding one of: mongolian, symbols, yi</li>
 <li>U+2466 CIRCLED DIGIT SEVEN: try adding one of: symbols, mongolian, yi</li>
-<li>U+2467 CIRCLED DIGIT EIGHT: try adding one of: symbols, mongolian, yi</li>
-<li>U+2468 CIRCLED DIGIT NINE: try adding one of: mongolian, yi, symbols</li>
+<li>U+2467 CIRCLED DIGIT EIGHT: try adding one of: mongolian, symbols, yi</li>
+<li>U+2468 CIRCLED DIGIT NINE: try adding one of: symbols, mongolian, yi</li>
 <li>U+24EA CIRCLED DIGIT ZERO: try adding symbols</li>
 <li>U+24FF NEGATIVE CIRCLED DIGIT ZERO: try adding symbols</li>
-<li>U+25CA LOZENGE: try adding one of: math, symbols</li>
+<li>U+25CA LOZENGE: try adding one of: symbols, math</li>
 <li>U+25CB WHITE CIRCLE: try adding symbols</li>
 <li>U+25CF BLACK CIRCLE: try adding symbols</li>
 <li>U+25E6 WHITE BULLET: try adding symbols</li>
@@ -979,7 +1515,7 @@ Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https:/
 <li>U+277C DINGBAT NEGATIVE CIRCLED DIGIT SEVEN: try adding symbols</li>
 <li>U+277D DINGBAT NEGATIVE CIRCLED DIGIT EIGHT: try adding symbols</li>
 <li>U+277E DINGBAT NEGATIVE CIRCLED DIGIT NINE: try adding symbols</li>
-<li>U+3003 DITTO MARK: try adding one of: phags-pa, japanese, chinese-hongkong, yi, chinese-traditional, chinese-simplified</li>
+<li>U+3003 DITTO MARK: try adding one of: chinese-simplified, chinese-traditional, japanese, chinese-hongkong, yi, phags-pa</li>
 <li>U+301C WAVE DASH: try adding japanese</li>
 </ul>
 <p>Or you can add the above codepoints to one of the subsets supported by the font: cyrillic-ext, latin-ext, latin, symbols2</p>
@@ -1023,7 +1559,7 @@ Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https:/
         <details>
             <summary>
                 ⚠️
-                PaperMono[wght].ttf
+                DesignaliMono[wght].ttf
                 
             </summary>
             <div>
@@ -1048,7 +1584,95 @@ Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https:/
 <tbody>
 <tr>
 <td>Auxiliary orthography codepoints:</td>
+<td>* de_Latn (German)</td>
+</tr>
+<tr>
+<td>The following auxiliary characters are missing from the font: Ĕ</td>
+<td></td>
+</tr>
+<tr>
+<td>The following auxiliary characters are missing from the font: Ĭ</td>
+<td></td>
+</tr>
+<tr>
+<td>The following auxiliary characters are missing from the font: Ŏ</td>
+<td></td>
+</tr>
+<tr>
+<td>The following auxiliary characters are missing from the font: ĕ</td>
+<td></td>
+</tr>
+<tr>
+<td>The following auxiliary characters are missing from the font: ĭ</td>
+<td></td>
+</tr>
+<tr>
+<td>The following auxiliary characters are missing from the font: ŏ</td>
+<td></td>
+</tr>
+<tr>
+<td>The following auxiliary characters are missing from the font: ſ</td>
+<td></td>
+</tr>
+<tr>
+<td>Auxiliary orthography codepoints:</td>
+<td>* ca_Latn (Catalan)</td>
+</tr>
+<tr>
+<td>The following auxiliary characters are missing from the font: Ĕ</td>
+<td>* cs_Latn (Czech)</td>
+</tr>
+<tr>
+<td>The following auxiliary characters are missing from the font: Ĭ</td>
+<td>* cy_Latn (Welsh)</td>
+</tr>
+<tr>
+<td>The following auxiliary characters are missing from the font: Ŏ</td>
+<td>* es_Latn (Spanish)</td>
+</tr>
+<tr>
+<td>The following auxiliary characters are missing from the font: ĕ</td>
+<td>* hu_Latn (Hungarian)</td>
+</tr>
+<tr>
+<td>The following auxiliary characters are missing from the font: ĭ</td>
+<td>* pt_Latn (Portuguese)</td>
+</tr>
+<tr>
+<td>The following auxiliary characters are missing from the font: ŏ</td>
+<td>* sk_Latn (Slovak)</td>
+</tr>
+<tr>
+<td></td>
+<td>* tr_Latn (Turkish)</td>
+</tr>
+<tr>
+<td>Auxiliary orthography codepoints:</td>
 <td>* en_Latn (English)</td>
+</tr>
+<tr>
+<td>The following auxiliary characters are missing from the font: Ĕ</td>
+<td></td>
+</tr>
+<tr>
+<td>The following auxiliary characters are missing from the font: Ĭ</td>
+<td></td>
+</tr>
+<tr>
+<td>The following auxiliary characters are missing from the font: Ŏ</td>
+<td></td>
+</tr>
+<tr>
+<td>The following auxiliary characters are missing from the font: ĕ</td>
+<td></td>
+</tr>
+<tr>
+<td>The following auxiliary characters are missing from the font: ĭ</td>
+<td></td>
+</tr>
+<tr>
+<td>The following auxiliary characters are missing from the font: ŏ</td>
+<td></td>
 </tr>
 <tr>
 <td>The following auxiliary characters are missing from the font: ʻ</td>
@@ -1056,7 +1680,39 @@ Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https:/
 </tr>
 <tr>
 <td>Auxiliary orthography codepoints:</td>
+<td>* fr_Latn (French)</td>
+</tr>
+<tr>
+<td>The following auxiliary characters are missing from the font: Ǔ</td>
+<td></td>
+</tr>
+<tr>
+<td>The following auxiliary characters are missing from the font: ſ</td>
+<td></td>
+</tr>
+<tr>
+<td>The following auxiliary characters are missing from the font: ǔ</td>
+<td></td>
+</tr>
+<tr>
+<td>Auxiliary orthography codepoints:</td>
+<td>* da_Latn (Danish)</td>
+</tr>
+<tr>
+<td>The following auxiliary characters are missing from the font: Ǿ</td>
+<td></td>
+</tr>
+<tr>
+<td>The following auxiliary characters are missing from the font: ǿ</td>
+<td></td>
+</tr>
+<tr>
+<td>Auxiliary orthography codepoints:</td>
 <td>* fi_Latn (Finnish)</td>
+</tr>
+<tr>
+<td>The following auxiliary characters are missing from the font: Ȟ</td>
+<td></td>
 </tr>
 <tr>
 <td>The following auxiliary characters are missing from the font: Ʒ</td>
@@ -1067,20 +1723,16 @@ Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https:/
 <td></td>
 </tr>
 <tr>
+<td>The following auxiliary characters are missing from the font: ȟ</td>
+<td></td>
+</tr>
+<tr>
 <td>The following auxiliary characters are missing from the font: ʒ</td>
 <td></td>
 </tr>
 <tr>
 <td>The following auxiliary characters are missing from the font: ǯ</td>
 <td></td>
-</tr>
-<tr>
-<td>Auxiliary orthography codepoints:</td>
-<td>* de_Latn (German)</td>
-</tr>
-<tr>
-<td>The following auxiliary characters are missing from the font: ſ</td>
-<td>* fr_Latn (French)</td>
 </tr>
 </tbody>
 </table>
@@ -1114,7 +1766,7 @@ Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https:/
         <details>
             <summary>
                 ⚠️
-                PaperMono[wght].ttf
+                DesignaliMono[wght].ttf
                 
             </summary>
             <div>
@@ -1128,11 +1780,24 @@ Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https:/
 
                             <span class='details_text'>
                                 
-                                    <p>The following separator glyphs are missing:</p>
-<ul>
-<li>U+2028</li>
-<li>U+2029</li>
-</ul>
+                                    <p>Missing separator glyph U+2028</p>
+                                
+                                
+                                     [code: missing-separator-glyphs]
+                                
+                            </span>
+                        </li>
+                
+                
+                
+                        <li class='details_item'>
+                            <span class='details_indicator'>
+                            ⚠️ WARN
+                            </span>
+
+                            <span class='details_text'>
+                                
+                                    <p>Missing separator glyph U+2029</p>
                                 
                                 
                                      [code: missing-separator-glyphs]
@@ -1202,6 +1867,18 @@ Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https:/
     
 
     
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
         <h3>Checking OS&#x2F;2 achVendID.</h3>
 <div class='check__idlabel'>Check ID: googlefonts&#x2F;vendor_id</div>
 
@@ -1215,7 +1892,7 @@ Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https:/
         <details>
             <summary>
                 ⚠️
-                PaperMono[wght].ttf
+                DesignaliMono[wght].ttf
                 
             </summary>
             <div>
@@ -1229,7 +1906,7 @@ Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https:/
 
                             <span class='details_text'>
                                 
-                                    <p>OS/2 VendorID value 'PAPR' is not yet recognized.
+                                    <p>OS/2 VendorID value 'DSAL' is not yet recognized.
 If you registered it recently, then it's safe to ignore this warning message. Otherwise, you should set it to your own unique 4 character code, and register it with Microsoft at <a href="https://www.microsoft.com/typography/links/vendorlist.aspx">https://www.microsoft.com/typography/links/vendorlist.aspx</a></p>
 
                                 
@@ -1245,6 +1922,8 @@ If you registered it recently, then it's safe to ignore this warning message. Ot
         </details>
     
 
+
+    
 
     
 
@@ -1276,7 +1955,7 @@ If you registered it recently, then it's safe to ignore this warning message. Ot
         <details>
             <summary>
                 ⚠️
-                PaperMono[wght].ttf
+                DesignaliMono[wght].ttf
                 
             </summary>
             <div>
@@ -1322,7 +2001,7 @@ replace the dot.</h3>
         <details>
             <summary>
                 ⚠️
-                PaperMono[wght].ttf
+                DesignaliMono[wght].ttf
                 
             </summary>
             <div>
@@ -1339,193 +2018,40 @@ replace the dot.</h3>
                                     <p>The dot of soft dotted characters used in orthographies <em>must</em> disappear in the following strings:</p>
 <ul>
 <li>
-<p>į̂</p>
+<p>į̌</p>
 </li>
 <li>
-<p>į̄</p>
-</li>
-<li>
-<p>į́</p>
+<p>į̃</p>
 </li>
 <li>
 <p>į̀</p>
 </li>
 <li>
-<p>į̌</p>
+<p>į̂</p>
 </li>
 <li>
-<p>į̃The dot of soft dotted characters <em>should</em> disappear in other cases, for example:</p>
+<p>į́</p>
 </li>
 <li>
-<p>į̶̋</p>
-</li>
-<li>
-<p>į̶̒</p>
-</li>
-<li>
-<p>į̶̂</p>
-</li>
-<li>
-<p>į̶̄</p>
-</li>
-<li>
-<p>į̶́</p>
-</li>
-<li>
-<p>į̶̇</p>
-</li>
-<li>
-<p>į̶̀</p>
-</li>
-<li>
-<p>į̶̌</p>
-</li>
-<li>
-<p>į̶̈</p>
-</li>
-<li>
-<p>į̶̊</p>
-</li>
-<li>
-<p>į̶̆</p>
-</li>
-<li>
-<p>į̶̃</p>
-</li>
-<li>
-<p>į̷̒</p>
-</li>
-<li>
-<p>į̨̋</p>
-</li>
-<li>
-<p>į̨̒</p>
-</li>
-<li>
-<p>į̨̂</p>
-</li>
-<li>
-<p>į̨̄</p>
-</li>
-<li>
-<p>į̨́</p>
-</li>
-<li>
-<p>į̨̇</p>
-</li>
-<li>
-<p>į̨̀</p>
-</li>
-<li>
-<p>į̨̌</p>
-</li>
-<li>
-<p>į̨̈</p>
-</li>
-<li>
-<p>į̨̊</p>
-</li>
-<li>
-<p>į̨̆</p>
-</li>
-<li>
-<p>į̨̃</p>
-</li>
-<li>
-<p>į̵̒</p>
-</li>
-<li>
-<p>į̸̒</p>
-</li>
-<li>
-<p>į̦̋</p>
-</li>
-<li>
-<p>į̦̒</p>
-</li>
-<li>
-<p>į̦̂</p>
-</li>
-<li>
-<p>į̦̄</p>
-</li>
-<li>
-<p>į̦́</p>
-</li>
-<li>
-<p>į̦̇</p>
-</li>
-<li>
-<p>į̦̀</p>
-</li>
-<li>
-<p>į̦̌</p>
-</li>
-<li>
-<p>į̦̈</p>
-</li>
-<li>
-<p>į̦̊</p>
-</li>
-<li>
-<p>į̦̆</p>
-</li>
-<li>
-<p>į̦̃</p>
-</li>
-<li>
-<p>į̧̋</p>
-</li>
-<li>
-<p>į̧̒</p>
-</li>
-<li>
-<p>į̧̂</p>
-</li>
-<li>
-<p>į̧̄</p>
-</li>
-<li>
-<p>į̧́</p>
-</li>
-<li>
-<p>į̧̇</p>
-</li>
-<li>
-<p>į̧̀</p>
-</li>
-<li>
-<p>į̧̌</p>
-</li>
-<li>
-<p>į̧̈</p>
-</li>
-<li>
-<p>į̧̊</p>
-</li>
-<li>
-<p>į̧̆</p>
-</li>
-<li>
-<p>į̧̃</p>
-</li>
-<li>
-<p>į̋</p>
-</li>
-<li>
-<p>į̒</p>
-</li>
-<li>
-<p>į̇</p>
-</li>
-<li>
-<p>į̈</p>
+<p>į̄The dot of soft dotted characters <em>should</em> disappear in other cases, for example:</p>
 </li>
 <li>
 <p>į̊</p>
 </li>
 <li>
+<p>į̇</p>
+</li>
+<li>
+<p>į̒</p>
+</li>
+<li>
 <p>į̆</p>
+</li>
+<li>
+<p>į̋</p>
+</li>
+<li>
+<p>į̈</p>
 </li>
 </ul>
                                 
@@ -1566,7 +2092,7 @@ replace the dot.</h3>
         <details>
             <summary>
                 ⚠️
-                PaperMono[wght].ttf
+                DesignaliMono[wght].ttf
                 
             </summary>
             <div>
@@ -1969,7 +2495,7 @@ replace the dot.</h3>
         <details>
             <summary>
                 ⚠️
-                PaperMono[wght].ttf
+                DesignaliMono[wght].ttf
                 
             </summary>
             <div>

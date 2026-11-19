@@ -1,0 +1,6 @@
+#!/Users/aliimam/Downloads/fonts/venv/bin/python3.12
+import sys
+from gftools.scripts.fix_vendorid import main
+if __name__ == '__main__':
+    sys.argv[0] = sys.argv[0].removesuffix('.exe')
+    sys.exit(main())
